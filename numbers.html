@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var num = prompt("Please enter a number.");
+	var thousandRemainder = num%1000;
+	var thousand = (num-thousandRemainder) / 1000;
+	var hundredRemainder = thousandRemainder%100;
+	var hundred = (thousandRemainder-hundredRemainder) /100;
+	var tenRemainder = hundredRemainder%10;
+	var ten = (hundredRemainder-tenRemainder) / 10;
+	console.log(thousand + " thousands\n" + hundred + " hundreds\n" + ten + " tens\n" + tenRemainder + " ones")
+</script>
+</body>
+</html>
